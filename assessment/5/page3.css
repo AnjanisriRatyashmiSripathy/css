@@ -63,19 +63,6 @@
 {
     background-image: url(./clouds.webp); 
     opacity: 25%;
-    position: relative;
-    animation: building 2s infinite;
-}
-@keyframes building
-{
-    from
-    {
-        transform: translateX(0px)
-    }
-    to
-    {
-        transform: translateX(10px);
-    }
 }
 .car_body
 {
