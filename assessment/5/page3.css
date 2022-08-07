@@ -44,36 +44,54 @@
 }
 .body
 {
-    width: 64vw;
-    height: 70vh;
+    width: 96vw;
+    height: 98vh;
     border-top-right-radius: 10px;
     border-top: 10px solid white;
     border-top-left-radius: 10px;
     background-image: url(./clouds.webp);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     border-right: 10px solid green;
     border-left: 10px solid orangered;
     border-bottom: 10px solid lightblue;
     
 }
+
+.building
+{
+    background-image: url(./clouds.webp); 
+    opacity: 25%;
+    position: relative;
+    animation: building 2s infinite;
+}
+@keyframes building
+{
+    from
+    {
+        transform: translateX(0px)
+    }
+    to
+    {
+        transform: translateX(10px);
+    }
+}
 .car_body
 {
     bottom: 1px;
     position: relative;
-    left: 200px;
     z-index: 2;
-   
 }
 @keyframes carbody
 {
     from
     {
-        transform: translateX(200px);
+        transform: translateX(0px);
     }
     to
     {
-        transform: translateX(600px);
+        transform: translateX(1000px);
     }
 }
 .car
@@ -82,28 +100,41 @@
     left: 70px;
     height: 100px;
     width: 90vw;
-    top:-320px;
+    top:-280px;
     display: inline-block;
     animation: carbody 7s infinite;
 }
 .road
 {
     position: relative;
-    left: 260.2px;
     opacity: 5px;
-    top: -120px;
+    top: -100px;
+    width: 96vw;
+    left: 15px;
+    animation: road 3s infinite alternate-reverse;
+}
+@keyframes road
+{
+    from
+    {
+        left: 12px;
+    }
+    to
+    {
+        right: 12px;
+    }
 }
 .wheelleft, .wheelright
 {
     width: 46px;
     position: absolute;
-    left: 220px;
-    top: 60px;
-    animation: wheels 2s infinite;
+    left: 20px;
+    top: 50px;
+    animation: wheels 60ms infinite;
 }
 .wheelright
 {
-    left: 374px;
+    left: 174px;
 }
 @keyframes wheels
 {
