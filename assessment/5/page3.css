@@ -1,0 +1,118 @@
+.happy
+{
+    background-image: linear-gradient(90deg, tomato, orange, tomato);
+    display: inline;
+    margin: 25px 10px;
+    padding: 4px;
+    position: relative;
+    top: 25px;
+}
+.indep
+{
+    background-image: linear-gradient(90deg, white, lightblue, white);
+    display: inline;
+    margin: 25px 10px;
+    padding: 4px; 
+    position: relative;
+    top: 25px;
+}
+.day
+{
+    background-image: linear-gradient(90deg, green, lightgreen, green);
+    display: inline;
+    margin: 25px 10px;
+    padding: 4px;
+    position: relative;
+    top: 25px;
+}
+.sun
+{
+    position:absolute; 
+    top:100px;
+    animation: sun 20s infinite;
+}
+@keyframes sun
+{
+    from
+    {
+        transform: rotateZ(0deg);
+    }
+    to
+    {
+        transform: rotateZ(360deg);
+    }
+}
+.body
+{
+    width: 64vw;
+    height: 70vh;
+    border-top-right-radius: 10px;
+    border-top: 10px solid white;
+    border-top-left-radius: 10px;
+    background-image: url(./clouds.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-right: 10px solid green;
+    border-left: 10px solid orangered;
+    border-bottom: 10px solid lightblue;
+    
+}
+.car_body
+{
+    bottom: 1px;
+    position: relative;
+    left: 200px;
+    z-index: 2;
+   
+}
+@keyframes carbody
+{
+    from
+    {
+        transform: translateX(200px);
+    }
+    to
+    {
+        transform: translateX(600px);
+    }
+}
+.car
+{
+    position: relative;
+    left: 70px;
+    height: 100px;
+    width: 90vw;
+    top:-320px;
+    display: inline-block;
+    animation: carbody 7s infinite;
+}
+.road
+{
+    position: relative;
+    left: 260.2px;
+    opacity: 5px;
+    top: -120px;
+}
+.wheelleft, .wheelright
+{
+    width: 46px;
+    position: absolute;
+    left: 220px;
+    top: 60px;
+    animation: wheels 2s infinite;
+}
+.wheelright
+{
+    left: 374px;
+}
+@keyframes wheels
+{
+    from
+    {
+        transform: rotateZ(0deg);
+    }
+    to
+    {
+        transform: rotateZ(360deg);
+    }
+}

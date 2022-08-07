@@ -1,0 +1,118 @@
+html
+{
+    background-color: yellow;
+}
+h1
+{
+    font-size: 60px;
+}
+div
+{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 50px;
+}
+.r1
+{
+    background-color: rgb(71, 98, 146);
+    animation: row1 3s 2s infinite alternate;
+}
+@keyframes row1
+{
+   from
+   {
+    transform: rotateX(45deg);
+    transform: rotateY(15deg);
+   }
+   to
+   {
+    transform: rotateX(-45deg);
+   }
+}
+.r2
+{
+    background-color: silver;
+    animation: row2 3s 4s infinite alternate;
+}
+@keyframes row2
+{
+    from
+   {
+    transform: rotateY(45deg);
+    transform: rotateX(-15deg);
+   }
+   to
+   {
+    transform: rotateY(-45deg);
+   }
+}
+.r3
+{
+    background-color: rgb(34, 56, 94);
+    animation: row3 2s 6s infinite; 
+}
+@keyframes row3
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    50%
+    {
+        transform: rotate(180deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.r41, .r42, .r43
+{
+    background-color: rgb(64, 83, 116);
+    border: 2.5px solid black;
+    animation: row41 3s 8s infinite alternate; 
+}
+.r42
+{
+    background-color: brown;
+    animation: row42 3s 8s infinite alternate; 
+}
+.r43
+{
+    background-color: lightgreen;
+    animation: row43 3s 8s infinite alternate; 
+}
+@keyframes row41
+{
+    from
+    {
+        transform: rotateX(0deg);
+    }
+    to
+    {
+        transform: rotateX(80deg);
+    }
+}
+@keyframes row42
+{
+    from
+    {
+        transform: rotateY(0deg);
+    }
+    to
+    {
+        transform: rotateY(80deg);
+    }
+}
+@keyframes row43
+{
+    from
+    {
+        transform: rotateZ(0deg);
+    }
+    to
+    {
+        transform: rotateZ(80deg);
+    }
+}

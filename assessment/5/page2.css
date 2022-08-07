@@ -1,0 +1,58 @@
+html
+{
+    background-color: yellow;
+}
+h1
+{
+    font-size: 60px;
+}
+span
+{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 50px 4px;
+    background-color: lightgreen;
+}
+div
+{
+    font-size: 25px;
+    font-weight: bold;
+    animation: list 10s  infinite;
+    animation-play-state: paused;
+    width: 850px;
+}
+div:hover
+{
+    animation-play-state: running;
+}
+@keyframes list
+{
+    from
+    {
+        transform: translateX(0);
+    }
+    50%
+    {
+        transform: translateX(-100px);
+    }
+    100%
+    {
+        transform: translateX(-150px);
+    }
+}
+.r1, .r2
+{
+   transition: 6s;
+}
+.r1:hover
+{
+    width: 800px;
+    animation-play-state: running;
+}
+.r2:hover
+{
+    width: 500px;
+    height: 300px;
+    animation-play-state: running;
+}
