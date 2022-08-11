@@ -1,0 +1,199 @@
+body
+{
+    margin: 0px;
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+/* nav bar*/
+a
+{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    position: relative;
+    top: 10vh;
+}
+.material-icons
+{
+    position: relative;
+    top: 5px;
+    background-color: gainsboro;
+    padding: 4px;
+    border-radius: 50%;
+}
+nav
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+.icon
+{
+    position: absolute;
+    left: 55px;
+    top: 9vh;    
+}
+/*nav bar*/
+/*Content area*/
+button
+{
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    background-color: white;
+    border: 3px solid white;
+    font-weight: bold;
+    text-align: center;
+    border-radius:25px ;
+}
+.content
+{
+   display: grid;
+   grid-template-columns:  auto auto auto; 
+   margin: 100px;
+   position: relative;
+   right: -25px;
+   row-gap: 6px;
+}
+h1
+{
+    font-size: 50px;
+}
+.left
+{
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    padding: 150px;
+    
+}
+.tl, .tr, .br, .bl
+{
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+    margin: 25px;
+    border-radius: 10px;
+    background-size: cover;
+}
+.right:hover 
+{
+    position: relative;
+    bottom: 15px;
+    cursor: pointer;
+    box-shadow: 3px 3px 4px lightgreen;
+}
+.tl
+{
+    background-image: url(./pic-1.png);
+}
+.tr
+{
+    background-image: url(./pic-2.png);
+}
+.br
+{
+    background-image: url(./pic-4.png);
+}
+.bl
+{
+    background-image: url(./pic-3.png);
+}
+/* Content area */
+@media (min-width:400px) and (max-width:950px)
+{
+    /* Responsive from 410 to 950 */
+body
+{
+    margin: 0px;
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+/* nav bar*/
+a
+{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 3px;
+    position: relative;
+    top: 10vh;
+}
+.material-icons
+{
+    position: relative;
+    top: 5px;
+    background-color: gainsboro;
+    padding: 4px;
+    border-radius: 50%;
+}
+nav
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+.icon
+{
+    position: absolute;
+    left: 5vw;
+    top: 9vh;    
+}
+/*nav bar*/
+/*Content area*/
+button
+{
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    background-color: white;
+    border: 3px solid white;
+    font-weight: bold;
+    text-align: center;
+    border-radius:25px ;
+}
+.content
+{
+   display: grid;
+   grid-template-columns:  auto; 
+   margin: 10px;
+}
+.tl, .tr, .br, .bl
+{
+    height: 200px;
+    width: 400px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-size: cover;
+}
+.right:hover 
+{
+    position: relative;
+    bottom: 15px;
+    cursor: pointer;
+    box-shadow: 3px 3px 4px lightgreen;
+}
+.tl
+{
+    background-image: url(./pic-1.png);
+}
+.tr
+{
+    background-image: url(./pic-2.png);
+}
+.br
+{
+    background-image: url(./pic-4.png);
+}
+.bl
+{
+    background-image: url(./pic-3.png);
+}
+/* Content area */
+/* Responsive from 410 to 950*/
+}
